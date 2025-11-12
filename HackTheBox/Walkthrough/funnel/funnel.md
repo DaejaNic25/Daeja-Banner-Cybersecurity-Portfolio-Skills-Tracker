@@ -1,8 +1,7 @@
 # Funnel — HackTheBox
-**Room URL:** *(add room URL if public/allowed)*
 **Category / Path:** Enumeration / Tunneling / Databases  
 **Difficulty:** Easy  
-**Date:** 2025-11-10 (replace with the date you completed the lab)
+**Date:** 2025-11-10
 
 ---
 

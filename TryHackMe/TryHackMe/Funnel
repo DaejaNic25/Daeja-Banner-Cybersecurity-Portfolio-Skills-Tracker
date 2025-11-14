@@ -1,0 +1,102 @@
+# TryHackMe: Humans as Attack Vectors  
+
+## Overview  
+This room explores the human side of cybersecurity — demonstrating how attackers manipulate psychology to gain access to systems and data. It also highlights how SOC analysts can identify and respond to these attacks while recommending preventive measures through user training and detection tools.
+
+---
+
+## Objectives  
+- Understand why humans are targeted in cyberattacks.  
+- Recognize common social engineering techniques.  
+- Learn mitigation and detection methods used by SOC analysts.  
+- Apply knowledge in practical SOC-based exercises.
+
+---
+
+## Task 1: Introduction  
+The Security Operations Center (SOC) protects organizations from both technical and human-based threats.  
+Attackers often exploit **the human element** because it provides the easiest path to access networks, data, or credentials.  
+
+---
+
+## Task 2: The Human Element  
+Humans are targeted for the **access** they control — email accounts, VPNs, databases, or administrative credentials.  
+Attackers may aim for HR personnel, IT admins, or executives to compromise sensitive information.  
+
+**Questions:**  
+- *What or who is the weakest link in cybersecurity?* — **Humans**  
+- *What do attackers seek when targeting humans in a cyberattack?* — **Access**
+
+---
+
+## Task 3: Attacks on Humans  
+Attacks that target people rely on **social engineering**, which manipulates psychology rather than exploiting technical flaws.  
+
+**Common Social Engineering Methods:**  
+- **Phishing:** Fake emails or login pages to steal credentials.  
+- **Malware Downloads:** Disguised malicious software (fake apps, QR codes, SEO poisoning).  
+- **Deepfakes:** AI-generated impersonations to conduct fraud or extract funds.  
+- **Impersonation:** Pretending to be IT staff or executives to trick victims into granting access.  
+
+**Questions:**  
+- *What is the name of an attack tactic that manipulates human psychology?* — **Social Engineering**  
+- *Which social engineering method is about pretending to be someone else?* — **Impersonation**
+
+---
+
+## Task 4: Defending Humans  
+Defense strategies combine **mitigation** (prevention) and **detection** (response).  
+
+**Mitigation Measures Include:**  
+- Anti-phishing filters and email security gateways.  
+- Antivirus and EDR solutions across endpoints.  
+- “Trust but verify” principle — validate unusual requests or communications.  
+- Security awareness training for employees.  
+
+**Questions:**  
+- *Which process is aimed at preventing or reducing the chance of an attack?* — **Mitigation**  
+- *Which mitigation measure is about training employees in cybersecurity?* — **Security Awareness Training**
+
+---
+
+## Task 5: Practice  
+In this hands-on section, you act as a **SOC analyst** defending TryHackMe employees.  
+You review alerts, update security policies, and secure employees at risk.  
+
+**Flags Obtained:**  
+- *Employees at Risk:* `INSERT_FLAG_HERE`  
+- *Security Policy:* `INSERT_FLAG_HERE`  
+
+**Screenshots:**  
+
+ 
+         
+
+---
+
+## Task 6: Conclusion  
+This room reinforces that humans remain the **weakest link** in cybersecurity.  
+SOC analysts must focus on both technical and awareness-based defense strategies to prevent breaches.  
+
+**Recommended Cybersecurity News Sources:**  
+- [Krebs on Security](https://krebsonsecurity.com)  
+- [The Hacker News](https://thehackernews.com)  
+- [BleepingComputer](https://www.bleepingcomputer.com)
+
+---
+
+## Skills Learned  
+- Identifying social engineering techniques.  
+- Understanding mitigation and detection in SOC workflows.  
+- Responding to phishing, impersonation, and malware threats.  
+
+## Tools Used  
+- SOC Dashboard Simulation  
+- EDR / Anti-Phishing Security Tools  
+
+---
+
+**Platform:** TryHackMe  
+**Room:** [Humans as Attack Vectors](https://tryhackme.com/room/humansasattackvectors)  
+**Author:** Daeja Banner  
+**Date Completed:** *(Add date)*

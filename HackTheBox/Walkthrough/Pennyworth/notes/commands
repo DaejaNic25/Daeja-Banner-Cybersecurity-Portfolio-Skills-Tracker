@@ -1,0 +1,6 @@
+Key commands used in the Pennyworth HTB machine:
+sudo nmap -sC -sV 10.129.141.161
+ip a | grep tun0
+nc -lvnp 8000
+whoami; id; ls
+cd /root && ls && cat flag.txt

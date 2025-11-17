@@ -17,7 +17,11 @@ This room teaches the fundamentals of alert handling, triage decision-making, wo
 
 # 🔹 **Task 1 — Introduction**
 
-Alerts are essential for SOC teams. They notify analysts of suspicious or malicious activity based on specific event patterns. L1 analysts must be able to understand alert structure, fields, severity, and status.
+Alerts notify analysts of suspicious or malicious activity based on event patterns inside the SIEM.
+
+Below is the SOC dashboard showing the alerts count:
+
+![SOC Dashboard](images/soc_l1_screenshot_01.png)
 
 ### **Learning Objectives**
 - Understand SOC alert concepts  
@@ -37,18 +41,26 @@ Alerts are essential for SOC teams. They notify analysts of suspicious or malici
 
 # 🔹 **Task 2 — Events and Alerts**
 
-Events become alerts after logging, ingestion into SIEM/EDR, and detection rule matching.  
-Alerting reduces noise by surfacing only suspicious activity.
+These screenshots show event → alert transitions and how alerts are displayed:
+
+![Alert list](images/soc_l1_screenshot_02.png)
+
+Events become alerts after:
+- Logging  
+- SIEM ingestion  
+- Detection rule matching  
 
 ### L1 SOC Responsibilities
 - Review alerts  
 - Distinguish false positives vs real threats  
-- Escalate to L2 if suspicious  
-- Document findings & classifications  
+- Escalate when necessary  
+- Document findings  
 
 ### **Questions**
 **What was the verdict for the “Unusual VPN Login Location” alert?**  
 ✔️ **False Positive**
+
+![Unusual VPN Login Alert](images/soc_l1_screenshot_03.png)
 
 **What user was mentioned in the alert?**  
 ✔️ **M.Clark**
@@ -58,23 +70,24 @@ Alerting reduces noise by surfacing only suspicious activity.
 # 🔹 **Task 3 — Alert Properties**
 
 Alerts typically include:
-- **Alert Time**
-- **Event Time**
-- **Name**
-- **Severity**
-- **Status**
-- **Verdict**
-- **Assignee**
-- **Description**
-- **Fields / IOCs**
+- **Alert Time**  
+- **Event Time**  
+- **Name**  
+- **Severity**  
+- **Status**  
+- **Verdict**  
+- **Assignee**  
+- **Description**  
+- **Fields / IOCs**  
+
+![Alert Details](images/soc_l1_screenshot_04.png)
 
 ### **Questions**
 **Should you first prioritize medium over low severity alerts?**  
 ✔️ **Yea**
 
 **Should you first take the newest alerts?**  
-✔️ **Nay**  
-(Oldest alerts get worked first.)
+✔️ **Nay**
 
 **Name of the first-priority alert you assigned yourself:**  
 ✔️ **Potential Data Exfiltration**
@@ -83,51 +96,60 @@ Alerts typically include:
 
 # 🔹 **Task 4 — Alert Prioritization**
 
-General workflow:
+Workflow for prioritizing alerts:
+
 1. Filter by **New** & **Unassigned**
-2. Sort by **Severity** (Critical → High → Medium → Low)
-3. Sort by **Time** (Oldest → Newest)
+2. Sort by **Severity**
+3. Sort by **Oldest First**
+4. Begin triage
+
+![Alert Sorting](images/soc_l1_screenshot_05.png)
 
 ---
 
 # 🔹 **Task 5 — Alert Triage**
 
-Triage involves:
+L1 triage involves:
 - Assigning the alert  
-- Changing status to **In Progress**  
-- Reading description & indicators  
-- Investigating logs  
-- Searching surrounding events  
-- Using threat intel  
-- Deciding verdict  
-- Closing ticket as TP or FP  
+- Setting **In Progress**  
+- Reviewing metadata  
+- Investigating event logs  
+- Searching additional context  
+- Deciding verdict (TP / FP)  
+- Closing with documentation  
 
-### **Questions: Flags Received**
-You will enter your flags here (redacted for THM ToS):
+Screenshots below show examples of triage workflow:
+
+![Triage Panel](images/soc_l1_screenshot_06.png)
+![Alert Investigation](images/soc_l1_screenshot_07.png)
+![Additional Evidence](images/soc_l1_screenshot_08.png)
+
+### **Questions: Flags Received (Redacted)**
 
 - **Flag for 1st alert:**  
-⬜ *(Insert your flag — do NOT include the real flag in a public repo)*  
+⬜ *(Do NOT include in public repo)*  
 
 - **Flag for 2nd alert:**  
-⬜ *(Insert placeholder)*  
+⬜ *(Placeholder)*  
 
 - **Flag for 3rd alert:**  
-⬜ *(Insert placeholder)*  
+⬜ *(Placeholder)*  
 
 ---
 
 # 🔹 **Task 6 — Conclusion**
 
-You successfully completed L1 alert triage.  
+You successfully completed L1 alert triage.
+
 You learned:
 - Effective alert ownership  
-- Prioritization logic  
-- Basic SIEM triage steps  
-- Investigating suspicious login alerts  
-- Identifying false positives  
-- Identifying potential exfiltration attempts  
+- Severity-based prioritization  
+- SIEM event analysis  
+- How to identify false positives  
+- How to spot potential exfiltration  
+- The difference between benign and malicious activity  
 
-This room builds core skills required for real SOC analyst roles and prepares you for the **SOC Level 1 path** and **SOC simulator**.
+This room builds real-world SOC fundamentals and prepares you for the **SOC Level 1 path** and the **SOC simulator**.
 
 ---
 
@@ -135,3 +157,11 @@ This room builds core skills required for real SOC analyst roles and prepares yo
 
 Place this write-up inside your repo like:
 
+```text
+TryHackMe/
+└── SOC L1 Alert Triage/
+    ├── soc_l1_alert_triage.md
+    ├── images/
+    │   ├── soc_l1_screenshot_01.png
+    │   ├── soc_l1_screenshot_02.png
+    │   ├── soc_l1_screenshot

@@ -153,15 +153,4 @@ This room builds real-world SOC fundamentals and prepares you for the **SOC Leve
 
 ---
 
-# 📁 **Recommended GitHub Folder Structure**
 
-Place this write-up inside your repo like:
-
-```text
-TryHackMe/
-└── SOC L1 Alert Triage/
-    ├── soc_l1_alert_triage.md
-    ├── images/
-    │   ├── soc_l1_screenshot_01.png
-    │   ├── soc_l1_screenshot_02.png
-    │   ├── soc_l1_screenshot

@@ -105,7 +105,3 @@ This significantly reduces the risk of credential-based attacks, even if a passw
 - Enforce secure communication channels (HTTPS)  
 - Monitor logs for repeated login failures or unauthorized attempts  
 
----
-
-# 📁 Suggested GitHub Folder Structure
-

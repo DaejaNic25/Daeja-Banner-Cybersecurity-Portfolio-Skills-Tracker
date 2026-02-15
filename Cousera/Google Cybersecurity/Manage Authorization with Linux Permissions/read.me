@@ -1,0 +1,174 @@
+# 🔐 Manage Authorization with Linux Permissions
+
+**Platform:** Coursera – Google Cybersecurity Certificate
+**Skill Level:** Introductory
+**Estimated Time:** ~1 hour
+
+---
+
+## 🧠 Overview
+
+This lab focuses on configuring and managing authorization in a Linux environment. Authorization ensures that only approved users can access or modify files and directories. As a security analyst, properly managing file permissions is critical to protecting sensitive information and preventing unauthorized access.
+
+---
+
+## 🎯 Scenario
+
+In this activity, I examined and modified file and directory permissions within the `/home/researcher2/projects` directory. The `researcher2` user belongs to the `research_team` group, and permissions needed to be reviewed and corrected to align with proper security standards.
+
+The objectives included:
+
+* Reviewing permissions of files and hidden files
+* Removing unauthorized write access
+* Restricting access to sensitive files
+* Modifying directory permissions to limit execution access
+
+---
+
+## 🛠️ Tools & Commands Used
+
+* `cd`
+* `ls -l`
+* `ls -la`
+* `chmod`
+
+---
+
+## 📝 Task Breakdown & Evidence
+
+---
+
+## 🔹 Task 1: Check File and Directory Details
+
+**Objective:**
+Review permissions for all files (including hidden files) inside the `projects` directory.
+
+**Commands Used:**
+
+```bash
+cd projects
+ls -l
+ls -la
+```
+
+**Evidence:**
+
+![Navigate to projects directory](images/Picture1.png)
+![List file permissions](images/Picture2.png)
+![Check for hidden files](images/Picture3.png)
+
+**Security Relevance:**
+Reviewing permissions ensures that unauthorized users do not have access to sensitive project files.
+
+---
+
+## 🔹 Task 2: Change File Permissions
+
+**Objective:**
+Remove write access for "other" users and restrict access to sensitive files.
+
+**Commands Used:**
+
+```bash
+chmod o-w filename
+chmod g-rw project_m.txt
+ls -l
+```
+
+**Evidence:**
+
+![Identify incorrect permissions](images/Picture4.png)
+![Remove write permission for other](images/Picture5.png)
+![Restrict group permissions on project\_m.txt](images/Picture6.png)
+![Confirm updated permissions](images/Picture7.png)
+
+**Security Relevance:**
+Restricting write permissions prevents unauthorized modification of files and protects integrity.
+
+---
+
+## 🔹 Task 3: Modify Hidden File Permissions
+
+**Objective:**
+Ensure `.project_x.txt` is read-only for user and group.
+
+**Commands Used:**
+
+```bash
+ls -la
+chmod ug-w .project_x.txt
+ls -l .project_x.txt
+```
+
+**Evidence:**
+
+![View hidden file permissions](images/Picture8.png)
+![Modify hidden file permissions](images/Picture9.png)
+![Confirm updated hidden file permissions](images/Picture10.png)
+
+**Security Relevance:**
+Hidden files often contain archived or configuration data. Ensuring they are read-only protects against accidental or malicious edits.
+
+---
+
+## 🔹 Task 4: Change Directory Permissions
+
+**Objective:**
+Restrict access to the `drafts` directory so only `researcher2` has execute access.
+
+**Commands Used:**
+
+```bash
+ls -ld drafts
+chmod g-x drafts
+ls -ld drafts
+```
+
+**Evidence:**
+
+![Check drafts directory permissions](images/Picture11.png)
+![Remove group execute permission](images/Picture12.png)
+
+**Security Relevance:**
+Removing execute permissions from the group prevents unauthorized users from accessing or traversing sensitive directories.
+
+---
+
+## ✅ Key Takeaways
+
+* Proper permission management protects system integrity
+* Removing unnecessary write access reduces risk of file tampering
+* Hidden files require the same level of security review as visible files
+* Directory execute permissions control user access to folder contents
+
+---
+
+## 📌 Skills Demonstrated
+
+* Linux permission analysis
+* Access control enforcement
+* Secure configuration management
+* Principle of least privilege implementation
+
+---
+
+## 📂 Repository Structure
+
+```text
+manage-authorization-lab/
+│
+├── README.md
+└── images/
+    ├── Picture1.png
+    ├── Picture2.png
+    ├── Picture3.png
+    ├── Picture4.png
+    ├── Picture5.png
+    ├── Picture6.png
+    ├── Picture7.png
+    ├── Picture8.png
+    ├── Picture9.png
+    ├── Picture10.png
+    ├── Picture11.png
+    └── Picture12.png
+```

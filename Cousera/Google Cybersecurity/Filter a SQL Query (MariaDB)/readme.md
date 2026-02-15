@@ -150,7 +150,7 @@ WHERE office LIKE 'South%';
 ![Expanded South building results](images/Picture7.png)
 
 ![Additional query output](images/Picture8.png
-    ├── Picture9.png)
+    )
 
 ![Final query output](images/Picture9.png)
 

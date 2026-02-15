@@ -192,5 +192,7 @@ filter-sql-query-lab/
     ├── Picture6.png
     ├── Picture7.png
     └── Picture8.png
+    └── Picture9.png
+
 ```
 

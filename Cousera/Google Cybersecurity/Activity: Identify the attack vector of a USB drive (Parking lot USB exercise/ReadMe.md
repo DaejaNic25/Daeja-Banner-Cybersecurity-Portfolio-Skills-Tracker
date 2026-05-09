@@ -41,8 +41,7 @@ Write 2-3 sentences about how this information could be used against Jorge or th
 
 - This information provided can be used against other employees because it provides shift schedules, and can be used against the relatives of the employee relatives since it have their family’s personal data such as wedding information listed. This USB also provides business information such as the different shifts for employees and employee budget.
 
-**Picture2**  
-![Picture2](images/Picture2.png)
+
 
 ---
 
@@ -52,5 +51,4 @@ Write 3 or 4 sentences describing technical, operational, or managerial controls
 
 - Finding a USB drive in a parking lot that contains both personal and professional files can be considered USB drop or USB baiting attack. Even if the files appear to be legit, the device itself can be weaponized to compromise both the individual and the company. The device can have keystroke injection, Auto-executing malware, and USB firmware, Hardware destruction such as a high voltage surge that instantly destroys the computer’s motherboard. Since the USB has both personal info and business info this can cause concern for physical security safety for the user since it provides their vacation info, can cause social engineering, and identity theft. For the business case this can cause operational sabotage, financial fraud, and network infiltration.
 
-**Picture3**  
-![Picture3](images/Picture3.png)
+
